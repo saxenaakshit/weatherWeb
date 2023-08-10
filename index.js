@@ -10,7 +10,8 @@ const userInfoContainer = document.querySelector(".user-info-container");
 
 //initial variables
 let currentTab= userTab;
-const API_KEY="84245e53e63b95faebbcc3f361189d50";
+
+const API_KEY = "84245e53e63b95faebbcc3f361189d50";
 currentTab.classList.add("current-tab");
 getfromSessionStorage();
 
@@ -141,6 +142,7 @@ searchForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     let cityName=searchInput.value;
     if(cityName==="") return;
+
 
     else
     fetchSearchWeatherInfo(cityName);
